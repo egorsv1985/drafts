@@ -1,8 +1,0 @@
-.logo {
-  // .logo__img
-  &__img {
-    @include media(min, xxl) {
-      @include wh(231px, 51px);
-    }
-  }
-}
