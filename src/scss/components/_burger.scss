@@ -1,0 +1,52 @@
+.burger {
+  @include wh(22px, 18px);
+
+  display: block;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 15;
+
+  @include media(min, xl) {
+    display: none;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include flex(center, center);
+
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      left: 0px;
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background-color: $bgColor;
+    }
+
+    &::before {
+      top: 0px;
+    }
+
+    &::after {
+      bottom: 0px;
+    }
+
+    span {
+      top: calc(50% - 1px);
+    }
+
+    .open & {
+      span,
+      &::before,
+      &::after {
+        background-color: #f2b720;
+      }
+    }
+  }
+}
