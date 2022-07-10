@@ -35,25 +35,56 @@
 }
 
 .swiper {
+  margin-left: 100px;
   // .swiper__item
   &__item {
+    width: 447px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0px 4px 26px rgba(187, 115, 7, 0.25);
+    backdrop-filter: blur(100px);
+
+    border-radius: 52px;
+
+    padding: 30px 25px;
   }
   // .swiper__box-img
   &__box-img {
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0px 4px 26px rgba(187, 115, 7, 0.25);
+    backdrop-filter: blur(100px);
+    border-radius: 52px;
+    margin-bottom: 28px;
   }
   // .swiper__img
   &__img {
   }
   // .swiper__box
   &__box {
+    padding-left: 10px;
   }
   // .swiper__subtitle
   &__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+
+    margin-bottom: 14px;
   }
   // .swiper__text
   &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffeed8;
   }
   // .swiper__span
   &__span {
+    text-decoration: underline;
+    font-weight: 700;
   }
 }
