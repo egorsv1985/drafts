@@ -1,75 +1,52 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-  @include flex(space-between, center, $flex-direction: column);
-  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 39px;
+  padding: 55px 58px 46px 60px;
+  margin-bottom: 70px;
 
-  // .form__box
-  &__box {
-    position: relative;
-    @include flex(center);
-    width: 100%;
-    max-width: 630px;
+  // .form__wrapper
+  &__wrapper {
+    @include flex();
   }
+  // .form__content
+  &__content {
+  }
+  // .form__subtitle
+  &__subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
 
+    background: linear-gradient(90deg, #fbd72b 0%, #ed6210 100%), #515151;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 15px;
+  }
+  // .form__text
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #8f8f8f;
+
+    max-width: 465px;
+  }
+  // .form__support
+  &__support {
+    @include flex($flex-direction: column);
+    gap: 20px;
+  }
   // .form__input
   &__input {
   }
-
-  // .form__label
-  &__label {
-  }
-
-  // .form__wrap
-  &__wrap {
-    @include flex($flex-direction: column);
-  }
-
-  // .form__checkbox-input
-  &__checkbox-input {
-  }
-
-  // .form__box-checkbox
-  &__box-checkbox {
-    @include flex($flex-direction: column);
-    gap: 25px;
-
-    margin-top: 15px;
-    padding-left: 228px;
-    align-self: flex-start;
-    margin-bottom: 28px;
-
-    @include media(max, xl) {
-      padding-left: 0;
-    }
-  }
-
-  // .form__checkbox
-  &__checkbox {
-  }
-
-  // .form__text
-  &__text {
-  }
-
-  // .form__link
-  &__link {
-  }
-
-  // .form__box-btns
-  &__box-btns {
-    @include flex();
-    gap: 16px;
-    @include media(max, md) {
-      flex-direction: column;
-    }
-  }
-
   // .form__btn
   &__btn {
   }
 }
-
 //</FORM>
 
 // <BUTTONS>
@@ -82,11 +59,11 @@
 
 // <CHECK>
 // Снипет (HTML): chk
-@import "checkbox";
+// @import "checkbox";
 
 // <RADIO>
 // Снипет (HTML): opt
-@import "radio";
+// @import "radio";
 
 // <SELECT>
 // Снипет (HTML): sel

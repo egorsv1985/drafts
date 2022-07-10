@@ -79,11 +79,21 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
+  filter: drop-shadow(0px 4px 11px rgba(159, 97, 4, 0.25));
+  border-radius: 9px;
+
+  background: linear-gradient(90deg, #ff5f00 0%, #ffd300 100%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   &:hover {
     background: linear-gradient(90deg, #ed6210 0%, #fbd72b 100%),
       linear-gradient(90.22deg, #f6c754 -0.85%, #e2a052 44.81%, #d17231 95.72%),
       #d9d9d9;
 
     color: #ffffff;
+   
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
   }
 }
