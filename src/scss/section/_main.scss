@@ -1,197 +1,66 @@
 .main {
   position: relative;
-  padding-bottom: 73px;
-  @include media(min, xl) {
-	padding-bottom: 110px;
-  }
-
-  &::before {
-    @include pseudo;
-    @include wh(38%, 100%);
-    @include background(url(@img/main/main-bg-blurry.png));
-    @include pos(absolute, $top: 0, $right: 0);
-    z-index: -2;
-  }
-  &::after {
-    @include pseudo;
-    @include wh(100%, 100%);
-    @include background(url(@img/main/main-bg-left.png));
-    @include pos(absolute, $top: 0, $right: 0);
-    z-index: -3;
-  }
-  .container {
-    @include media(min, xl) {
-      padding: 0 160px;
-    }
-  }
-
+  padding: 115px 0;
   // .main__wrapper
   &__wrapper {
-    @include flex($flex-direction: column);
+    @include flex(flex-end);
   }
-  // .main__box
-  &__box {
-    @include flex(space-between, center);
-
-    max-width: 88px;
-    margin-bottom: 30px;
-    @include media(min, xl) {
-      max-width: 270px;
-      align-self: flex-end;
-      gap: 40px;
-      margin-bottom: 0;
-    }
+  // .main__box-img
+  &__box-img {
+    @include pos (absolute, $top: -45%, $left: 0);
+    
+   
   }
   // .main__img
   &__img {
-    @include wh(38px, 40px);
-    @include media(min, xl) {
-      @include wh(114px, 120px);
-    }
+    
   }
-  // .main__subtitle
-  &__subtitle {
-    display: none;
-    @include media(min, xl) {
-      display: flex;
-      margin-bottom: 15px;
-    }
+  // .main__wrap
+  &__wrap {
+    @include flex($align-items: center, $flex-direction: column);
+    gap: 30px;
+    margin-right: 20px;
+
   }
-  // .main__title
-  &__title {
-    max-width: 270px;
-    margin-bottom: 40px;
-    @include media(min, xl) {
-      max-width: 700px;
-    }
-  }
-  // .main__list
-  &__list {
+  // .main__content
+  &__content {
     @include flex($flex-direction: column);
-    gap: 20px;
-    padding-left: 26px;
-    max-width: 150px;
-    margin-bottom: 50px;
-    @include media(min, xl) {
-      gap: 32px;
-      max-width: 570px;
-      padding-left: 56px;
-    }
-  }
-  .tren img,
-.tren source{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    min-width: 157px;
-    width: 157px;
-    margin-bottom: 0;
-    height: 209px;
-  
-
-}
-  // .main__item
-  &__item {
-    position: relative;
-    &::before {
-      @include pseudo;
-      @include wh(20px);
-      @include background(url(@img/icons/check.svg));
-      @include pos(absolute, $top: 0, $left: -28px);
-      @include media(min, xl) {
-        @include wh(40px);
-        left: -56px;
-      }
-    }
-  }
-  // .main__text
-  &__text {
-  }
-  // .main__text-absolute
-  &__text-absolute {
-    @include pos(absolute, $top: 34%, $right: 29%);
-    font-size: 8px;
-    line-height: 11px;
-    font-weight: 400;
-    text-align: right;
-    @include media(min, xl) {
-      font-size: 18px;
-
-      line-height: 25px;
-      text-align: left;
-     
-      right: 19%;
-    }
-  }
-  // .main__span
-  &__span {
-    font-weight: 500;
-  }
-  // .main__btn
-  &__btn {
-    max-width: 131px;
-    @include media(min, xl){
-		max-width: 231px;
-	}
-  }
-  // .main__img-absolute
-  &__img-absolute {
-    @include wh(308px, 551px);
-
-    @include pos(absolute, $top: -4px, $right: -27%);
-    z-index: -1;
-    @include media(min, sm) {
-      right: -15%;
-    }
-    @include media(min, md) {
-      right: 0;
-    }
-	@include media(min, xl){
-		@include wh (470px, 790px);
-		
-		right: 25%;
-		top: 24px;
-	
-
-	}
-  }
-}
-.main {
-  // .main__wrapper
-  &__wrapper {
-  }
-  // .main__box
-  &__box {
-  }
-  // .main__img
-  &__img {
-  }
-  // .main__subtitle
-  &__subtitle {
   }
   // .main__title
   &__title {
+    font-size: 47.7728px;
+    line-height: 58px;
+
+    color: #515151;
+    text-align: center;
   }
-  // .main__list
-  &__list {
-  }
-  // .main__item
-  &__item {
+  // .main__subtitle
+  &__subtitle {
+    font-weight: 900;
+    font-size: 43.0058px;
+    line-height: 52px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #fbd72b 0%, #ed6210 100%),
+      linear-gradient(90.22deg, #f6c754 -0.85%, #e2a052 44.81%, #d17231 95.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+    margin-bottom: 20px;
   }
   // .main__text
   &__text {
-  }
-  // .main__text-absolute
-  &__text-absolute {
-  }
-  // .main__span
-  &__span {
+    font-family: "Barlow";
+
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #8f8f8f;
   }
   // .main__btn
   &__btn {
-  }
-  // .main__img-absolute
-  &__img-absolute {
+    width: 186px;
   }
 }

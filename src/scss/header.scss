@@ -1,10 +1,24 @@
 .header {
-	// .header__wrapper
-	&__wrapper {}
-	// .header__nav
-	&__nav {}
-	// .header__box-buttons
-	&__box-buttons {}
-	// .header__button
-	&__button {}
+	margin: 120px 0 50px;
+  // .header__wrapper
+  &__wrapper {
+    @include flex(flex-end, center);
+	gap: 32px;
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__box-buttons
+  &__box-buttons {
+    @include flex(space-between, center);
+	gap: 15px;
+  }
+  // .header__button
+  &__button {
+    width: 120px;
+
+    &--wide {
+      width: 210px;
+    }
+  }
 }

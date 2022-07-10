@@ -1,0 +1,20 @@
+.cases {
+  padding: 95px 0;
+  background: linear-gradient(113.47deg, #fbce53 22.09%, #f79f3d 96.48%),
+    #d9d9d9;
+  // .cases__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .cases__title
+  &__title {
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 58px;
+
+    color: #ffffff;
+  }
+  // .cases__span
+  &__span {
+  }
+}
