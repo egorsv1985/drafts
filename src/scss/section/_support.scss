@@ -15,6 +15,8 @@
   &__content {
     @include flex($flex-direction: column);
     margin-bottom: 66px;
+	position: relative;
+	z-index: 2;
   }
   // .support__title
   &__title {
@@ -65,8 +67,8 @@
   }
   // .support__box-img
   &__box-img {
-    @include pos(absolute, $top: 3%, $right: 0);
-    z-index: -1;
+    @include pos(absolute, $top: 2%, $right: 0);
+    z-index: 1;
   }
   // .support__img
   &__img {

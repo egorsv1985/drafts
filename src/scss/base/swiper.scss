@@ -49,6 +49,35 @@
     border-radius: 52px;
 
     padding: 30px 25px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 184px;
+      height: 184px;
+
+      background: #fffefb;
+      opacity: 0.8;
+      filter: blur(188px);
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 184px;
+      height: 184px;
+
+      background: #fffefb;
+      opacity: 0.8;
+      filter: blur(188px);
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      z-index: 1;
+    }
   }
   // .swiper__box-img
   &__box-img {
