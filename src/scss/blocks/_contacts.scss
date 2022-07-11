@@ -1,12 +1,15 @@
 .contacts {
   position: relative;
   border-radius: 30px;
-  border: 2px solid;
+ 
   z-index: 2;
 
   margin-left: 60px;
   max-width: 1040px;
   padding: 25px 0 18px 32px;
+  background: rgba(255, 255, 255, 0.19);
+box-shadow: 0px 4px 26px rgba(187, 115, 7, 0.25);
+backdrop-filter: blur(100px);
 
   // .contacts__wrapper
   &__wrapper {
