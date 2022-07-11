@@ -3403,6 +3403,19 @@
         s
       );
     }
+    changeLanguageDirection(e) {
+      const t = this;
+      (t.rtl && "rtl" === e) ||
+        (!t.rtl && "ltr" === e) ||
+        ((t.rtl = "rtl" === e),
+        (t.rtlTranslate = "horizontal" === t.params.direction && t.rtl),
+        t.rtl
+          ? (t.$el.addClass(`${t.params.containerModifierClass}rtl`),
+            (t.el.dir = "rtl"))
+          : (t.$el.removeClass(`${t.params.containerModifierClass}rtl`),
+            (t.el.dir = "ltr")),
+        t.update());
+    }
     mount(e) {
       const t = this;
       if (t.mounted) return !0;
