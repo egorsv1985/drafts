@@ -2,8 +2,7 @@
   position: relative;
   border-radius: 30px;
   border: 2px solid;
-
-  //   border-image-source: url(@img/support/border.png);
+  z-index: 2;
 
   margin-left: 60px;
   max-width: 1040px;
@@ -22,11 +21,6 @@
   }
   // .contacts__subtitle
   &__subtitle {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #ffeed8;
   }
   // .contacts__text
   &__text {
@@ -52,12 +46,19 @@
     line-height: 22px;
     letter-spacing: 0.19em;
 
+    position: relative;
+    z-index: 3;
+
     color: #fffaf4;
+    &:hover {
+      background-color: darken(#ffca96, 6%);
+    }
   }
 
   // .contacts__box-img
   &__box-img {
     @include pos(absolute, $top: 0, $right: 0);
+    z-index: 1;
   }
   // .contacts__img
   &__img {

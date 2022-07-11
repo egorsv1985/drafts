@@ -1,19 +1,56 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
-  
+  font-weight: 500;
+  font-size: 47.7728px;
+  line-height: 58px;
+
+  color: $mainColor;
+
+  &--gray {
+    color: #515151;
+  }
 }
 
 .subtitle {
- 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $lightColor;
+
+  &--bold {
+    font-weight: 900;
+  }
+
+  &--big {
+    font-size: 43px;
+    line-height: 52px;
+  }
+  &--gradient {
+    background: linear-gradient(90deg, #fbd72b 0%, #ed6210 100%),
+      linear-gradient(90.22deg, #f6c754 -0.85%, #e2a052 44.81%, #d17231 95.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .text {
- 
+  &--barlow {
+    font-family: "Barlow";
+  }
+  font-size: 18px;
+  line-height: 22px;
+
+  color: $mainColor;
+  &--gray {
+    color: $textGrayColor;
+  }
+  &--bold {
+    font-weight: 500;
+  }
+  &--light {
+    color: $lightColor;
+  }
 }
 
-.span {
-}
-
-.link {
-}

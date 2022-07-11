@@ -22,10 +22,8 @@
   color: #494949;
 
   &:hover {
-    background: #0d0d0d;
-    border: 1px solid #0d0d0d;
-
-    color: #ffffff;
+    background-color: lighten(#fbf8f8, 3%);
+    text-decoration: underline;
   }
 }
 
@@ -36,8 +34,8 @@
   color: #ffffff;
   &:hover {
     border: 1px solid #aeaeae;
-    color: #494949;
-    background-color: transparent;
+   
+    background-color: lighten(#0d0d0d, 15%);
   }
 }
 
@@ -62,12 +60,8 @@
 
   color: #ffffff;
   &:hover {
-    filter: drop-shadow(0px 4px 11px rgba(159, 97, 4, 0.25));
+    background: lighten(#fbd72b, 6%);
 
-    background: linear-gradient(90deg, #ff5f00 0%, #ffd300 100%), #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 }
 
@@ -77,23 +71,15 @@
   background: linear-gradient(90deg, #ff5f00 0%, #ffd300 100%), #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 
-  filter: drop-shadow(0px 4px 11px rgba(159, 97, 4, 0.25));
-  border-radius: 9px;
 
-  background: linear-gradient(90deg, #ff5f00 0%, #ffd300 100%), #ffffff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
   &:hover {
-    background: linear-gradient(90deg, #ed6210 0%, #fbd72b 100%),
-      linear-gradient(90.22deg, #f6c754 -0.85%, #e2a052 44.81%, #d17231 95.72%),
-      #d9d9d9;
-
-    color: #ffffff;
-   
+    background: lighten(#fbd72b, 6%);
+    color: $mainColor;
     -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
+  -webkit-text-fill-color: unset;
+
+  
   }
 }

@@ -15,17 +15,11 @@
   &__content {
     @include flex($flex-direction: column);
     margin-bottom: 66px;
-	position: relative;
-	z-index: 2;
+    position: relative;
+    z-index: 2;
   }
   // .support__title
   &__title {
-    font-weight: 500;
-    font-size: 47px;
-    line-height: 58px;
-
-    color: #ffffff;
-
     margin-left: 60px;
     margin-bottom: 30px;
   }
@@ -49,20 +43,9 @@
   }
   // .support__subtitle
   &__subtitle {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #ffeed8;
   }
   // .support__text
   &__text {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #ffeed8;
-
     max-width: 460px;
   }
   // .support__box-img

@@ -7,12 +7,6 @@
   }
   // .done__title
   &__title {
-    font-weight: 500;
-    font-size: 47px;
-    line-height: 58px;
-
-    color: #515151;
-
     padding-left: 60px;
     margin-bottom: 40px;
   }
@@ -34,8 +28,8 @@
   &__list {
     @include flex($flex-direction: column);
     gap: 14px;
-   margin-right: 54px;
-   margin-bottom: 26px;
+    margin-right: 54px;
+    margin-bottom: 26px;
   }
   // .done__item
   &__item {
@@ -43,13 +37,7 @@
   // .done__text
   &__text {
     display: inline-block;
-    font-family: "Barlow";
 
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #8f8f8f;
-    
     padding: 5px 11px;
     border: 1px solid #8f8f8f;
     border-radius: 15px;
@@ -68,6 +56,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-	margin-right: 246px;
+    margin-right: 246px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      &::before {
+        @include pseudo;
+        @include wh(100%, 2px);
+        background: linear-gradient(90deg, #fbc046 0%, #faba4c 100%), #ffffff;
+        @include pos(absolute, $left: 50%, $bottom: -5px);
+        transform: translateX(-50%);
+      }
+    }
   }
 }
